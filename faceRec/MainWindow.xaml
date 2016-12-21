@@ -1,0 +1,21 @@
+﻿<Window x:Class="faceRec.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:faceRec"
+        mc:Ignorable="d"
+        Title="KnockKnock" Height="482.955" Width="594.886">
+    <Grid x:Name="BackPanel" Margin="0,0,0,-65">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="335*"/>
+            <ColumnDefinition Width="104*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="FacePhoto" Stretch="Uniform" Grid.ColumnSpan="3" Height="486" VerticalAlignment="Top" Grid.Column="1" Margin="0,10,-56,0"/>
+        <Button x:Name="BrowseButton" Margin="32,0,51,82" Height="20"         
+                VerticalAlignment="Bottom" Content="Open File"                
+                Click="BrowseButton_Click" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
